@@ -1,0 +1,5 @@
+nom = input("Ur name please:")
+print ("Ur name is " + nom)
+
+yir = input("hw old r y")
+print ("u are " + yir + "years old")

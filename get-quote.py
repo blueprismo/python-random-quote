@@ -1,13 +1,9 @@
-import random
-def primary():
+class Person:
+    def __init__(self,name):
+        self.name = name
 
-  f = open("quotes.txt")
-  quotes = f.readlines()
-  f.close()
-  last = len(quotes) -1
-  rnd = random.randint(0,last)
-  rnd1 = random.randint(0,last)
-  print (quotes[rnd],quotes[rnd1])
+    def say_hi(self):
+        print('Hello, my name is', self.name)
 
-if __name__== "__main__":
-  primary()
+p = Person('Swaroop')
+p.say_hi()
